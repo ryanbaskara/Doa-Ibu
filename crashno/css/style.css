@@ -491,17 +491,6 @@ footer .footer-3 ul li a:hover{color: #666;}
   color: #f7ca16;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  font-weight: 700;
-  font-size: 12px;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #c00;
-}
-
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #c00;
   background-color: transparent;
@@ -511,6 +500,51 @@ footer .footer-3 ul li a:hover{color: #666;}
   background-color: #f93a6b;
   border-color: transparent;
 }
+
+/* inverse */
+.navbar-inverse .navbar-nav > li > a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #f7ca16;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverese .navbar-nav > .active > a:focus {
+  color: #c00;
+  background-color: #fff;
+}
+
+.navbar-inverse {
+  background-color: #c00;
+  border-color: transparent;
+}
+
+/* none */
+.navbar-none .navbar-nav > li > a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.navbar-none .navbar-nav > li > a:hover {
+  color: #f7ca16;
+}
+
+.navbar-none .navbar-nav > .active > a, .navbar-none .navbar-nav > .active > a:hover, .navbar-none .navbar-nav > .active > a:focus {
+  color: #3498db;
+  background-color: #fff;
+}
+
+.navbar-none {
+  background-color: #3498db;
+  border-color: transparent;
+}
+
 
 .body{
   padding-top: 100px;
