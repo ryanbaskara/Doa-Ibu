@@ -16,7 +16,7 @@
 	<?php include 'navbar.php'; ?>	
 
 	<div class="body featured container">
-		<div class="row">
+		<div class="row">	
 			<div class="col-sm-12">
 				<!-- Carousel -->
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -95,11 +95,11 @@
 			<?php
 			$jenis_kelamin=$_COOKIE['jenis_kelamin'];
 			if($jenis_kelamin=='L') 
-				include 'content-atas-male';
+				include 'content-atas-male.php';
 			else if($jenis_kelamin=='P')
-				include 'content-atas-female';
+				include 'content-atas-female.php';
 			else
-				include 'content-atas-none';
+				include 'content-atas-none.php';
 			?>
 			<div id="sidebar">
 				<div class="col-md-3">
@@ -132,11 +132,11 @@
 			</div>
 			<?php
 			if($jenis_kelamin=='L') 
-				include 'content-bawah-male';
+				include 'content-bawah-male.php';
 			else if($jenis_kelamin=='P')
-				include 'content-bawah-female';
+				include 'content-bawah-female.php';
 			else
-				include 'content-bawah-none';
+				include 'content-bawah-none.php';
 			?>
 		</div>
 	</div>
