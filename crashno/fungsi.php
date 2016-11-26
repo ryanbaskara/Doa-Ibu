@@ -101,9 +101,9 @@
 		
 	}
 	else if(isset($_POST['register'])){
-		$email = $_POST['email'];
-		$nama = $_POST['nama'];
-		$tanggallahir = $_POST['lahir'];
+		$email = $_POST['email']; echo $email;
+		$nama = $_POST['nama']; echo $nama;
+		$tanggallahir = date();
 		$jeniskelamin = $_POST['jenis_kelamin'];
 		$password = $_POST['password'];
 		$temp = register($email,$password,$nama);

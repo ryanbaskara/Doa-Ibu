@@ -67,7 +67,13 @@
 	                <h2>Daftar</h2>
 	            </div>
 	                <div class="modal-body">
-	                    <form action="cek_daftar.php" method="post" role="form-group">
+	                    <form action="fungsi.php" method="post" role="form-group">
+	                        <div class="form-group">
+	                            <label for="name">Name : </label>
+	                            <div class="input-group">
+	                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+	                                <input type="text"  class="form-control" name="nama" id="nama" placeholder="Name"></div>
+	                        </div>
 	                        <div class="form-group">
 	                            <label for="email">Email : </label>
 	                            <div class="input-group">
