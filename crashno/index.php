@@ -502,11 +502,12 @@
 		maxView: 1,
 		forceParse: 0
     });
-	
-	$(window).load(function()
-	{
-	    $('#myModal').modal('show');
-	});
+	<?php if (!isset($_COOKIE['jenis_kelamin'])) { ?>
+		$(window).load(function()
+		{
+		    $('#myModal').modal('show');
+		});
+	<?php } ?>
 	
 </script>
 

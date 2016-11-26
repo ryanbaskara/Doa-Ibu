@@ -96,6 +96,8 @@
 		$jenis_kelamin = $row['u_jenis_kelamin'];
 		setCookieFunc("jenis_kelamin",$jenis_kelamin);
 		setCookieFunc("access_token",$json['token']['access_token']);
+		setCookieFunc("login",1);
+		header('location:index.php');
 		
 	}
 	else if(isset($_POST['register'])){
@@ -113,9 +115,13 @@
 			if ($query==1) {
 				echo "register sukses";
 			}
+			setCookieFunc("jenis_kelamin",$jeniskelamin);
+			setCookieFunc("access_token",$json['token']['access_token']);
+			setCookieFunc("login",1);
 		} else {
 			echo $json['message'];
 		}
+		header('location:index.php');
 	}
 
 	function lastRead($id_story){

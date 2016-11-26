@@ -37,20 +37,20 @@
 	                <h2>Login</h2>
 	            </div>
 	                <div class="modal-body">
-	                    <form action="cek_login.php" method="post" role="form-group">
+	                    <form action="fungsi.php" method="post" role="form-group">
 	                        <div class="form-group">
-	                            <label for="email">Username : </label>
+	                            <label for="email">Email : </label>
 	                            <div class="input-group">
 	                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-	                                <input type="text"  class="form-control" name="username" id="username" placeholder="Username"></div>
+	                                <input type="email"  class="form-control" name="email" id="username" placeholder="Email"></div>
 	                        </div>
 	                        <div class="form-group">
 	                            <label for="pwd">Password : </label>
 	                            <div class="input-group">
 	                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
-	                                <input type="password" class="form-control" name="pswd" id="pswd" placeholder="Password"></div>
+	                                <input type="password" class="form-control" name="password" id="pswd" placeholder="Password"></div>
 	                        </div>
-	                       <button type="submit" class="btn btn-danger raised">Login</button>
+	                       <button type="submit" class="btn btn-danger raised" name="login">Login</button>
 	                    </form>
 
 	                </div>
@@ -72,26 +72,26 @@
 	                            <label for="email">Email : </label>
 	                            <div class="input-group">
 	                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-	                                <input type="text"  class="form-control" name="email" id="username" placeholder="Email"></div>
+	                                <input type="email"  class="form-control" name="email" id="username" placeholder="Email"></div>
 	                        </div>
 	                        <div class="form-group">
 	                            <label for="pwd">Password : </label>
 	                            <div class="input-group">
 	                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
-	                                <input type="password" class="form-control" name="pswd" id="pswd" placeholder="Password"></div>
+	                                <input type="password" class="form-control" name="password" id="pswd" placeholder="Password"></div>
 	                        </div>
 	                        <div class="form-group">
 	                            <label for="jk">Jenis Kelamin : </label>
 	                            <div class="input-group">
 	                            	<div class="radio">
-									  <label><input type="radio" value="L" name="optradio">Laki-Laki</label>
+									  <label><input type="radio" value="L" name="jenis_kelamin">Laki-Laki</label>
 									</div>
 									<div class="radio">
-									  <label><input type="radio" value="P" name="optradio">Perempuan</label>
+									  <label><input type="radio" value="P" name="jenis_kelamin">Perempuan</label>
 									</div>
 	                            </div>
 	                        </div>
-	                       <button type="submit" class="btn btn-danger raised">Daftar</button>
+	                       <button type="submit" class="btn btn-danger raised" name="register">Daftar</button>
 	                    </form>
 
 	                </div>
