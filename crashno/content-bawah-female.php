@@ -13,10 +13,10 @@
 											<h3><a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 0); ?></a></h3>
 											<div class="top-name">
 												<hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 1); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 2); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 3); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 4); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 1); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 2); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 3); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 4); ?></a><hr class="style-line">
 												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 5); ?></a><hr class="style-line">
 											</div>
 										</div>
@@ -36,10 +36,10 @@
 											<h3><a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 0); ?></a></h3>
 											<div class="top-name">
 												<hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 1); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 2); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 3); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 4); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 1); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 2); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 3); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 4); ?></a><hr class="style-line">
 												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 5); ?></a><hr class="style-line">
 											</div>
 										</div>
@@ -59,10 +59,10 @@
 											<h3><a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 0); ?></a></h3>
 											<div class="top-name">
 												<hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 1); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 2); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 3); ?></a><hr class="style-line"> 
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 4); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 1); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 2); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 3); ?></a><hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 4); ?></a><hr class="style-line">
 												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 5); ?></a><hr class="style-line">
 											</div>
 										</div>
@@ -73,15 +73,16 @@
 					</div>
 				</div>
 				<div class="col-md-12">
-					<div class="vid-tags">
-						<h4 class="vid-name"> Topik Lainnya :</h4>
-						<a href="view.php?category=8">Automotive</a>
-						<a href="view.php?category=9">Life & Health</a>
-						<a href="view.php?category=10">Technology</a>
-						<a href="view.php?category=2">Bussines</a>
-						<a href="view.php?category=12">Tech Development</a>
-						<a href="view.php?category=14">Religion</a>
-						<a href="view.php?category=15">Soccer</a>
-					</div>
-				</div>
+			        <div class="vid-tags">
+			            <h4 class="vid-name"> Topik Lainnya :</h4><br>
+			            <a href="view.php?category=<?php getGroupId($dataJK[6], $auth); ?>"><?php echo $namaGrup[6]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[7], $auth); ?>"><?php echo $namaGrup[7]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[8], $auth); ?>"><?php echo $namaGrup[8]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[9], $auth); ?>"><?php echo $namaGrup[9]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[10], $auth); ?>"><?php echo $namaGrup[10]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[11], $auth); ?>"><?php echo $namaGrup[11]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[12], $auth); ?>"><?php echo $namaGrup[12]; ?></a>
+			            <a href="view.php?category=<?php getGroupId($dataJK[13], $auth); ?>"><?php echo $namaGrup[13]; ?></a>
+			        </div>
+			    </div>
 			</div>

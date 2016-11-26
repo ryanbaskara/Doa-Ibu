@@ -30,7 +30,12 @@
 				      <img src="<?php echo $json['thumbnail']['url']; ?>">
 					  <div class="caption">
 					        <div class="line"></div>
-						<?php echo $json['content'][1]['text']; ?>
+						<?php
+						if ($json['thumbnail']==NULL) {
+							echo $json['content'][0]['text'];
+						}
+						//print_r($json['content']);
+						else echo $json['content'][1]['text']; ?>
 						<div class="line"></div>
 				      </div>
 				    </div>
@@ -47,11 +52,14 @@
 								<div class="row">
 									<div class="top-name">
 										<hr class="style-line">
-										<?php foreach ($data as $row) {
+										<?php 
+											if($data!=NULL){
+											foreach ($data as $row) {
 										?>
 										<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a><hr class="style-line"> <br>
 										<?php
-										} ?>
+										} 
+										}?>
 									</div>
 
 								</div>

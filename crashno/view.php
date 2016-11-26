@@ -1,5 +1,5 @@
 <?php 
-	include 'feed.php';
+	include 'feed_lainnya.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,36 +11,26 @@
 		<div class="col-md-12">
 				<div class="box">
 						<div class="box-header header-natural">
-							<h2>Kategorinya apa :</h2>
+							<h2><?php echo $json['name'] ?></h2>
 						</div>
 						<div class="box-content">
 							<div class="row">
-								<div class="col-md-4">
-									<img src="images/6.jpg" />
-									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
-								</div>
-								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
-								</div>
-								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<img src="images/6.jpg" />
-									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
-								</div>
-								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
-								</div>
-								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
-								</div>
+							<?php 
+								$counter=0;
+								for($i=0;$i<count($id_categories);$i++){
+									$temp=ambil($id_categories[$i]);
+									foreach ($temp['data'] as $hasil) {
+										?><div class="col-md-4">
+											<img src="<?php echo $hasil['thumbnail']['url']?>" />
+											<h3><a href="single.php?id=<?php echo $hasil['id'] ?>"><?php echo $hasil['title']; ?></a></h3>
+										</div>
+										<?php
+										$counter++;
+										if ($counter==6) break;
+									}
+									if($counter==6) break;
+								}
+							?>
 							</div>
 						</div>
 				</div>
