@@ -71,31 +71,15 @@
 		}
 	}
 
-	// function setCookieGroup ($cookieName, $cookieValue)
-	// {
-	// 	$number_of_days = 1 ;
-	// 	$date_of_expiry = time() + 60 * 60 * 24 * $number_of_days ;
-	// 	setcookie($cookieName, $cookieValue, $date_of_expiry, "/");
-	// }
-	//
-	// function getAllDataGroup ($auth, $arr)
-	// {
-	// 	$context = otentikasi($auth);
-	// 	$arrayGroup = array();
-	//
-	// 	foreach($arr as $item)
-	// 	{
-	// 		if ($item != 13)
-	// 		{
-	// 			$url='https://hack.kurio.co.id/v1/explore/group/' . $item;
-	// 			$content=file_get_contents($url,false,$context);
-	// 			$json= json_decode($content,true);
-	// 			array_push($arrayGroup, $json);
-	// 		}
-	// 	}
-	// 	$jsonGroup = json_encode($arrayGroup);
-	// 	setCookieGroup("groupCookie", $jsonGroup);
-	// }
+	function getGroupId ($arr, $auth)
+	{
+		$context = otentikasi($auth);
+		$url='https://hack.kurio.co.id/v1/explore/group/' . $arr;
+		$content=file_get_contents($url,false,$context);
+		$json= json_decode($content,true);
+
+		echo $json['id'];
+	}
 
 	function getGroup ($arr, $auth)
 	{
