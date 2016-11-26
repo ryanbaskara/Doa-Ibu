@@ -7,47 +7,11 @@
 	$dataJK= ambilDataCoCe($jk);
 
 	$namaGrup = getGroup($dataJK, $auth);
+	ini_set('max_execution_time', 60);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Free Bootstrap Themes by 365Bootstrap dot com - Free Responsive Html5 Templates">
-    <meta name="author" content="http://www.365bootstrap.com">
-	
-    <title>Hackathon Kurio 2016</title>
-	
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
-	
-	<!-- Owl Carousel Assets -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-	
-	<!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-	 <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-	
-	<!-- Custom Fonts -->
-    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"  type="text/css">
-	
-	<!-- jQuery and Modernizr-->
-	<script src="js/jquery-2.1.1.js"></script>
-	
-	<!-- Core JavaScript Files -->  	 
-    <script src="js/bootstrap.min.js"></script>
-	
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
-</head>
-
 <body>
 	<?php include 'navbar.php'; ?>	
 
@@ -76,8 +40,6 @@
 										getTitleFeed($dataJK[0], $auth, 0);
 									?>
 									</h2>
-									<br>
-									<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 									<br>
 								</div>
 							</div><!-- /header-text -->
@@ -309,31 +271,6 @@
 			<div id="sidebar">
 				<div class="col-md-3">
 					<!---- Start Widget ---->
-					<div class="widget wid-gallery">
-						<div class="heading"><h4>Trending</h4></div>
-						<div class="content">
-							<div class="col-md-12">
-								<div class="row">
-									<a href="#"><img src="images/4.jpg" /></a>
-									<h5 class="top-name">
-										<a href="#">Ini Namenya</a>
-										
-									</h5>
-
-									<div class="top-name">
-										<hr class="style-line">
-										<a href="#">Trending 1</a><hr class="style-line"> 
-										<a href="#">Trending 2</a><hr class="style-line"> 
-										<a href="#">Trending 3</a><hr class="style-line"> 
-										<a href="#">Trending 4</a><hr class="style-line"> 
-										<a href="#">Trending 5</a><hr class="style-line">
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
 					<div class="widget wid-gallery">
 						<div class="heading"><h4>Top Stories</h4></div>
 						<div class="content">

@@ -1,5 +1,8 @@
 <?php
-$data=$_GET['jk'];
+	include 'fungsi.php';
+	
+	$data=$_GET['jk'];
+	guest($data);
 
-echo $data;
+	header("location:index.php");
 ?>

@@ -30,7 +30,7 @@
 
 		return $content;
 	}
-	function guest(){
+	function guest($jeniskelamin){
 		$base_url = 'https://hack.kurio.co.id/v1/';
 		$url_login = 'auth/guest';
 		$device_token = "test";
@@ -54,8 +54,8 @@
 		$url=$base_url.$url_login;
 		$content=file_get_contents($url,false,$context);
 		$json= json_decode($content,true);
-		$jenis_kelamin = 'L'; //dapetin $_POST dari form nanti
-		setCookieFunc("jenis_kelamin",$jenis_kelamin);
+		
+		setCookieFunc("jenis_kelamin",$jeniskelamin);
 		setCookieFunc("access_token",$json['token']['access_token']);
 		echo $json['token']['access_token'];
 
