@@ -2,8 +2,9 @@
 	include '../test/getGrup.php';
 	include 'topStories.php';
 	$temp = topStories();
-	$jk=$_COOKIE['jenis_kelamin'];
+	$jk="none";
 	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
+	
 	$dataJK= ambilDataCoCe($jk);
 
 	$namaGrup = getGroup($dataJK, $auth);
