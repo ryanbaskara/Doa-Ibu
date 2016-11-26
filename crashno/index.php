@@ -2,12 +2,20 @@
 	include '../test/getGrup.php';
 	include 'topStories.php';
 	$temp = topStories();
-	$jk="none";
-	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
+	
+	
+	if(isset($_COOKIE['jenis_kelamin'])){
+		$jk=$_COOKIE['jenis_kelamin'];
+		$auth=$_COOKIE['access_token'];
+	}
+	else {
+		$jk="none";
+		$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
+	}
 	
 	$dataJK= ambilDataCoCe($jk);
-
 	$namaGrup = getGroup($dataJK, $auth);
+	
 	ini_set('max_execution_time', 60);
 ?>
 

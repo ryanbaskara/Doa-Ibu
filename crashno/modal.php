@@ -4,7 +4,7 @@
 	      <!-- Modal content-->
 	      <div class="modal-content">
 	        <div class="modal-header">
-	           <a class="btn btn-danger btn-xm" href="cek_awal.php?jk=none" style="float:right">X</a>
+	           <a class="btn btn-danger btn-xm" data-dismiss="modal" style="float:right">X</a>
 	          <h4 class="modal-title text-center">Jenis Kelamin</h4>
 	        </div>
 	        <div class="modal-body">
