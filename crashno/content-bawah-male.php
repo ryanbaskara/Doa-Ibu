@@ -1,4 +1,4 @@
-<div class="main-content">
+			<div class="main-content">
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-4">
@@ -70,6 +70,18 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="vid-tags">
+						<h4 class="vid-name"> Topik Lainnya :</h4>
+						<a href="view.php?category=1">News</a>
+						<a href="view.php?category=4">Life & Health</a>
+						<a href="view.php?category=5">Self improvement</a>
+						<a href="view.php?category=11">marketing</a>
+						<a href="view.php?category=6">Art & Design</a>
+						<a href="view.php?category=7">Lifestyle</a>
+						<a href="view.php?category=3">Entertainment</a>
 					</div>
 				</div>
 			</div>

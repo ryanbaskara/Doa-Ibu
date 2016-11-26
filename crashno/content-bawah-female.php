@@ -1,4 +1,4 @@
-<div class="main-content">
+			<div class="main-content">
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-4">
@@ -70,6 +70,18 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="vid-tags">
+						<h4 class="vid-name"> Topik Lainnya :</h4>
+						<a href="view.php?category=8">Automotive</a>
+						<a href="view.php?category=9">Life & Health</a>
+						<a href="view.php?category=10">Technology</a>
+						<a href="view.php?category=2">Bussines</a>
+						<a href="view.php?category=12">Tech Development</a>
+						<a href="view.php?category=14">Religion</a>
+						<a href="view.php?category=15">Soccer</a>
 					</div>
 				</div>
 			</div>
