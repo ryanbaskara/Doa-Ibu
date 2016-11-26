@@ -35,98 +35,23 @@
 				      </div>
 				    </div>
 				</div>
-				
-				<div class="box">
-					<div class="box-header header-natural">
-						<h2>Related Article</h2>
-					</div>
-					<div class="box-content">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="wrap-vid">
-									<div class="zoom-container">
-										<div class="zoom-caption">
-											<span>Youtube</span>
-											<a href="single.html">
-												<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
-											</a>
-											<p>Video's Name</p>
-										</div>
-										<img src="images/2.jpg" />
-									</div>
-									<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-									<div class="info">
-										<h5>By <a href="#">Kelvin</a></h5>
-										<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-										<span><i class="fa fa-heart"></i>1,200</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="wrap-vid">
-									<div class="zoom-container">
-										<div class="zoom-caption">
-											<span>Youtube</span>
-											<a href="single.html">
-												<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
-											</a>
-											<p>Video's Name</p>
-										</div>
-										<img src="images/2.jpg" />
-									</div>
-									<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-									<div class="info">
-										<h5>	By <a href="#">Kelvin</a></h5>
-										<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-										<span><i class="fa fa-heart"></i>1,200</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="wrap-vid">
-									<div class="zoom-container">
-										<div class="zoom-caption">
-											<span>Youtube</span>
-											<a href="single.html">
-												<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
-											</a>
-											<p>Video's Name</p>
-										</div>
-										<img src="images/2.jpg" />
-									</div>
-									<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-									<div class="info">
-										<h5>By <a href="#">Kelvin</a></h5>
-										<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-										<span><i class="fa fa-heart"></i>1,200</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			
 			</div>
 			<div id="sidebar">
 				<div class="col-md-3">
 					<!---- Start Widget ---->
 					<div class="widget wid-gallery">
-						<div class="heading"><h4>Top Stories</h4></div>
+						<div class="heading"><h4>Last Seen</h4></div>
 						<div class="content">
 							<div class="col-md-12">
 								<div class="row">
-									<a href="single.php?id=<?php echo $temp[0]['id']; ?>"><img src="<?php echo $temp[0]['gambar'] ?>" />
-									<h5 class="top-name">
-									<br>
-										<a href="single.php?id=<?php echo $temp[0]['id']; ?>"><?php echo $temp[0]['judul']; ?></a>
-									</h5>
-
 									<div class="top-name">
 										<hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[1]['id']; ?>"><?php echo $temp[1]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[2]['id']; ?>"><?php echo $temp[2]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[3]['id']; ?>"><?php echo $temp[3]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[4]['id']; ?>"><?php echo $temp[4]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[5]['id']; ?>"><?php echo $temp[5]['judul']; ?></a><hr class="style-line">
+										<?php foreach ($data as $row) {
+										?>
+										<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a><hr class="style-line"> <br>
+										<?php
+										} ?>
 									</div>
 
 								</div>
