@@ -2,7 +2,7 @@
 	include '../test/getGrup.php';
 	include 'topStories.php';
 	$temp = topStories();
-	$jk="none";
+	$jk=$_COOKIE['jenis_kelamin'];
 	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
 	$dataJK= ambilDataCoCe($jk);
 
