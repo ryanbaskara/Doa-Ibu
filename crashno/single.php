@@ -1,3 +1,6 @@
+<?php 
+	include 'feed.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,27 +88,25 @@
 			<div id="main-content" class="col-md-8">
 				<div class="box" style="border:0;">
 					<div class="thumbnail">
-				      <h1 class="article-name">Ini Berita yang Dibaca</h1>
+				      <h1 class="article-name"><?php echo $json['title']; ?></h1>
 				      <div class="media">
 						  <div class="media-left media-middle">
-						    <a href="#">
-						      <img class="pull-left img-circle" src="images/4.jpg" alt="..." width="8%">
+						    <a href="<?php echo $json['source']['url'] ?>">
+						      <img class="pull-left img-circle" src="<?php echo $json['source']['icon'] ?>" alt="..." width="5%">
 						    </a>
 						  </div>
 						  <div class="media-body">
 						    <div class="info">
-							<h5>By <a href="#">Kelvin</a></h5>
-							<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+							<h5>By <a href="<?php echo $json['source']['url'] ?>"><?php echo $json['source']['name']; ?></a></h5>
+							<!-- <span><i class="fa fa-calendar"></i>25/3/2015</span>  -->
 							</div>
 						  </div>
 						</div>
-				      <img src="images/4.jpg">
+				      <img src="<?php echo $json['thumbnail']['url']; ?>">
 					  <div class="caption">
 					        <div class="line"></div>
-						<h1 class="vid-name"><a href="#">Video's Name</a></h1>
-						<p style="margin-top: 20px">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac euismod turpis.Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac euismod turpis.</p>
-						<h4>Heading</h4>
-						<p style="margin-top: 20px">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac euismod turpis.</p>
+						<h1 class="vid-name">Deskripsi Berita</h1>
+						<?php echo $json['content'][1]['text']; ?>
 						<div class="line"></div>
 				      </div>
 				    </div>
