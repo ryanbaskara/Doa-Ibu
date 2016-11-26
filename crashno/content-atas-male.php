@@ -78,35 +78,35 @@
 					</div>
 					<div class="box">
 						<div class="box-header header-natural">
-							<h2>Natural</h2>
+							<h2<?php echo $namaGrup[1]; ?></h2>
 						</div>
 						<div class="box-content">
 							<div class="row">
 								<div class="col-md-4">
-									<img src="images/6.jpg" />
-									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
+									<?php echo getImageFeed($dataJK[1], $auth, 1); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[1], $auth, 1); ?></a></h3>
 								</div>
 								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+									<?php echo getImageFeed($dataJK[1], $auth, 2); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[1], $auth, 2); ?></a></h3>
 								</div>
 								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+									<?php echo getImageFeed($dataJK[1], $auth, 3); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[1], $auth, 3); ?></a></h3>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-4">
-									<img src="images/6.jpg" />
-									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
+									<?php echo getImageFeed($dataJK[1], $auth, 4); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[1], $auth, 4); ?></a></h3>
 								</div>
 								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+									<?php echo getImageFeed($dataJK[1], $auth, 5); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[1], $auth, 5); ?></a></h3>
 								</div>
 								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+									<?php echo getImageFeed($dataJK[1], $auth, 6); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[1], $auth, 6); ?></a></h3>
 								</div>
 							</div>
 						</div>
@@ -114,21 +114,21 @@
 
 					<div class="box">
 						<div class="box-header header-natural">
-							<h2>Auto</h2>
+							<h2><?php echo $namaGrup[2]; ?></h2>
 						</div>
 						<div class="box-content">
 							<div class="row">
 								<div class="col-md-4">
-									<img src="images/6.jpg" />
-									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
+									<?php echo getImageFeed($dataJK[2], $auth, 1); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[2], $auth, 1); ?></a></h3>
 								</div>
 								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+									<?php echo getImageFeed($dataJK[2], $auth, 2); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[2], $auth, 2); ?></a></h3>
 								</div>
 								<div class="col-md-4">
-									<img src="images/7.jpg" />
-									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+									<?php echo getImageFeed($dataJK[2], $auth, 3); ?>
+									<h3><a href="#"><?php echo getTitleFeed($dataJK[2], $auth, 3); ?></a></h3>
 								</div>
 							</div>
 						</div>
