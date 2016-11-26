@@ -53,37 +53,28 @@
         </div>
         <div class="navbar-collapse collapse">
         	<ul class="nav navbar-nav">
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Category <i class="fa fa-arrow-circle-o-down"></i></a>
-					<div class="dropdown-menu">
-						<div class="dropdown-inner">
-							<ul class="list-unstyled">
-								<li><a href="archive.html">News</a></li>
-								<li><a href="archive.html">Otomotif</a></li>
-								<li><a href="archive.html">Tekno</a></li>
-								<li><a href="archive.html">Bola</a></li>
-								<li><a href="archive.html">Travel</a></li>
-							</ul>
-							<ul class="list-unstyled">
-								<li><a href="archive.html">Celeb</a></li>
-								<li><a href="archive.html">Kesehatan</a></li>
-								<li><a href="archive.html">Bisnis</a></li>
-								<li><a href="archive.html">Style</a></li>
-								<li><a href="archive.html">Life</a></li>
-							</ul>
-							<ul class="list-unstyled">
-								<li><a href="archive.html">Unik</a></li>
-								<li><a href="archive.html">Trending</a></li>
-								<li><a href="archive.html#">Top Stories</a></li>
-								</ul>
-						</div>
-					</div>
-				</li>
+				<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
 			</ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.php">Login</a></li>
-            <li>
-            	
-            </li>
+            <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akun <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#loginModal" data-toggle='modal'>Login</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#daftarModal" data-toggle='modal'">Daftar</a></li>
+	          </ul>
+	        </li>
           </ul>
         </div>
       </div>
@@ -157,25 +148,6 @@
 		<div class="row">
 			<div id="main-content"><!-- background not working -->
 				<div class="col-md-9">
-					<div class="box wrap-vid">
-						<div class="zoom-container">
-							<div class="zoom-caption">
-								<span class="youtube">Youtube</span>
-								<a href="single.html">
-									<i class="fa fa-play icon-play" style="color: #fff"></i>
-								</a>
-								<p>Video's Name</p>
-							</div>
-							<img src="images/4.jpg" />
-						</div>
-						<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-						<div class="info">
-							<h5>By <a href="#">Kelvin</a></h5>
-							<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-							<span><i class="fa fa-heart"></i>1,200</span>
-						</div>
-						<p class="more">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan</p>
-					</div>
 					<div class="box">
 						<div class="box-header header-vimeo">
 							<h2>Vimeo</h2>
@@ -499,7 +471,7 @@
 	      <!-- Modal content-->
 	      <div class="modal-content">
 	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	           <a class="btn btn-danger btn-xm" data-dismiss="modal" style="float:right">X</a>
 	          <h4 class="modal-title text-center">Jenis Kelamin</h4>
 	        </div>
 	        <div class="modal-body">
@@ -521,6 +493,77 @@
 	          &nbsp;
 	        </div>
 	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade " id="loginModal" role="dialog">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <a class="btn btn-danger btn-xm" data-dismiss="modal" style="float:right">X</a>
+	            <div class="modal-header">
+	                <h2>Login</h2>
+	            </div>
+	                <div class="modal-body">
+	                    <form action="cek_login.php" method="post" role="form-group">
+	                        <div class="form-group">
+	                            <label for="email">Username : </label>
+	                            <div class="input-group">
+	                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+	                                <input type="text"  class="form-control" name="username" id="username" placeholder="Username"></div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="pwd">Password : </label>
+	                            <div class="input-group">
+	                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
+	                                <input type="password" class="form-control" name="pswd" id="pswd" placeholder="Password"></div>
+	                        </div>
+	                       <button type="submit" class="btn btn-danger raised">Login</button>
+	                    </form>
+
+	                </div>
+	            
+	        </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade " id="daftarModal" role="dialog">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <a class="btn btn-danger btn-xm" data-dismiss="modal" style="float:right">X</a>
+	            <div class="modal-header">
+	                <h2>Daftar</h2>
+	            </div>
+	                <div class="modal-body">
+	                    <form action="cek_daftar.php" method="post" role="form-group">
+	                        <div class="form-group">
+	                            <label for="email">Email : </label>
+	                            <div class="input-group">
+	                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+	                                <input type="text"  class="form-control" name="email" id="username" placeholder="Email"></div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="pwd">Password : </label>
+	                            <div class="input-group">
+	                                <span class="input-group-addon"><span class="fa fa-lock"></span></span>
+	                                <input type="password" class="form-control" name="pswd" id="pswd" placeholder="Password"></div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="jk">Jenis Kelamin : </label>
+	                            <div class="input-group">
+	                            	<div class="radio">
+									  <label><input type="radio" value="L" name="optradio">Laki-Laki</label>
+									</div>
+									<div class="radio">
+									  <label><input type="radio" value="P" name="optradio">Perempuan</label>
+									</div>
+	                            </div>
+	                        </div>
+	                       <button type="submit" class="btn btn-danger raised">Daftar</button>
+	                    </form>
+
+	                </div>
+	            
+	        </div>
 	    </div>
 	  </div>
 
