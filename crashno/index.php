@@ -1,9 +1,12 @@
 <?php
 	include '../test/getGrup.php';
-
+	include 'topStories.php';
+	$temp = topStories();
 	$jk="none";
 	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
 	$dataJK= ambilDataCoCe($jk);
+
+	$namaGrup = getGroup($dataJK, $auth);
 ?>
 
 <!DOCTYPE html>
@@ -331,24 +334,24 @@
 						</div>
 					</div>
 
-					<!---- Start Widget ---->
 					<div class="widget wid-gallery">
 						<div class="heading"><h4>Top Stories</h4></div>
 						<div class="content">
 							<div class="col-md-12">
 								<div class="row">
-									<a href="#"><img src="images/4.jpg" />
+									<a href="single.php?id=<?php echo $temp[0]['id']; ?>"><img src="<?php echo $temp[0]['gambar'] ?>" />
 									<h5 class="top-name">
-										<a href="#">Ini Namenya</a>
+									<br>
+										<a href="single.php?id=<?php echo $temp[0]['id']; ?>"><?php echo $temp[0]['judul']; ?></a>
 									</h5>
 
 									<div class="top-name">
 										<hr class="style-line">
-										<a href="#">Top Stories 2</a><hr class="style-line"> 
-										<a href="#">Top Stories 3</a><hr class="style-line"> 
-										<a href="#">Top Stories 4</a><hr class="style-line"> 
-										<a href="#">Top Stories 5</a><hr class="style-line"> 
-										<a href="#">Top Stories 6</a><hr class="style-line">
+										<a href="single.php?id=<?php echo $temp[1]['id']; ?>"><?php echo $temp[1]['judul']; ?></a><hr class="style-line"> 
+										<a href="single.php?id=<?php echo $temp[2]['id']; ?>"><?php echo $temp[2]['judul']; ?></a><hr class="style-line"> 
+										<a href="single.php?id=<?php echo $temp[3]['id']; ?>"><?php echo $temp[3]['judul']; ?></a><hr class="style-line"> 
+										<a href="single.php?id=<?php echo $temp[4]['id']; ?>"><?php echo $temp[4]['judul']; ?></a><hr class="style-line"> 
+										<a href="single.php?id=<?php echo $temp[5]['id']; ?>"><?php echo $temp[5]['judul']; ?></a><hr class="style-line">
 									</div>
 
 								</div>
@@ -363,23 +366,22 @@
 						<div class="col-md-4">
 							<div class="box">
 								<div class="box-header header-natural">
-									<h2>Natural</h2>
+									<h2><?php echo $namaGrup[3]; ?></h2>
 								</div>
 								<div class="box-content">
 									<div class="row">
 										<div class="col-md-12">
-											<img src="images/6.jpg" />
-											<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
-											<span><i class="fa fa-heart"></i> 1,200 / <i class="fa fa-calendar"></i> 25/3/2015 / <i class="fa fa-comment-o"> / </i> 10 <i class="fa fa-eye"></i> 945</span>
-											<span class="rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-half"></i>
-											</span>
-											<p>Marshall, Will, and Holly on a routine expedition, met the greatest earthquake ever known. High on the rapids, it struck their tiny raft! And plunged them down a thousand feet below…...</p>
-										</div>	
+											<?php echo getImageFeed($dataJK[3], $auth, 0); ?>
+											<h3><a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 0); ?></a></h3>
+											<div class="top-name">
+												<hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 1); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 2); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 3); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 4); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 5); ?></a><hr class="style-line">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -387,23 +389,22 @@
 						<div class="col-md-4">
 							<div class="box">
 								<div class="box-header header-natural">
-									<h2>Natural</h2>
+									<h2><?php echo $namaGrup[4]; ?></h2>
 								</div>
 								<div class="box-content">
 									<div class="row">
 										<div class="col-md-12">
-											<img src="images/6.jpg" />
-											<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
-											<span><i class="fa fa-heart"></i> 1,200 / <i class="fa fa-calendar"></i> 25/3/2015 / <i class="fa fa-comment-o"> / </i> 10 <i class="fa fa-eye"></i> 945</span>
-											<span class="rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-half"></i>
-											</span>
-											<p>Marshall, Will, and Holly on a routine expedition, met the greatest earthquake ever known. High on the rapids, it struck their tiny raft! And plunged them down a thousand feet below…...</p>
-										</div>	
+											<?php echo getImageFeed($dataJK[4], $auth, 0); ?>
+											<h3><a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 0); ?></a></h3>
+											<div class="top-name">
+												<hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 1); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 2); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 3); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 4); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 5); ?></a><hr class="style-line">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -411,27 +412,26 @@
 						<div class="col-md-4">
 							<div class="box">
 								<div class="box-header header-natural">
-									<h2>Natural</h2>
+									<h2><?php echo $namaGrup[5]; ?></h2>
 								</div>
 								<div class="box-content">
 									<div class="row">
 										<div class="col-md-12">
-											<img src="images/6.jpg" />
-											<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
-											<span><i class="fa fa-heart"></i> 1,200 / <i class="fa fa-calendar"></i> 25/3/2015 / <i class="fa fa-comment-o"> / </i> 10 <i class="fa fa-eye"></i> 945</span>
-											<span class="rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-half"></i>
-											</span>
-											<p>Marshall, Will, and Holly on a routine expedition, met the greatest earthquake ever known. High on the rapids, it struck their tiny raft! And plunged them down a thousand feet below…...</p>
-										</div>	
+											<?php echo getImageFeed($dataJK[5], $auth, 0); ?>
+											<h3><a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 0); ?></a></h3>
+											<div class="top-name">
+												<hr class="style-line">
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 1); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 2); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 3); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 4); ?></a><hr class="style-line"> 
+												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 5); ?></a><hr class="style-line">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div> 
+						</div>
 					</div>
 				</div>
 			</div>
