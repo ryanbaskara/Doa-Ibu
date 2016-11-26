@@ -44,7 +44,6 @@
 		array_push($groupWoman, 11);
 		array_push($groupWoman, 6);
 		array_push($groupWoman, 1);
-		array_push($groupWoman, 7);
 		array_push($groupWoman, 8);
 		array_push($groupWoman, 9);
 		array_push($groupWoman, 10);
@@ -130,6 +129,17 @@
 		$idTopStories = $json['topics']['data'][0]['id'];
 
 		return $idTopStories;
+	}
+
+	function getIdFeed ($grup, $auth, $idBerita)
+	{
+		$id = getIdNewsGenderBased($grup, $auth);
+
+		$context = otentikasi($auth);
+		$url='https://hack.kurio.co.id/v1/feed/topic:' . $id;
+		$content=file_get_contents($url,false,$context);
+		$json= json_decode($content,true);
+		echo $json['data'][$idBerita]['id'];
 	}
 
 	function getTitleFeed ($grup, $auth, $idBerita)
