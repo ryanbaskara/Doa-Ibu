@@ -59,19 +59,19 @@
 		{
 			return $groupMan;
 		}
-		else if ($jenisKelamin == "P")
+		else
 		{
 			return $groupWoman;
 		}
-		else
-		{
-			$random = rand(1, 15);
-			if ($random == 13)
-				$random += 1;
-
-			array_push($groupRandom, $random);
-			return $groupRandom;
-		}
+		// else
+		// {
+		// 	$random = rand(1, 15);
+		// 	if ($random == 13)
+		// 		$random += 1;
+		//
+		// 	array_push($groupRandom, $random);
+		// 	return $groupRandom;
+		// }
 	}
 
 	// function setCookieGroup ($cookieName, $cookieValue)
