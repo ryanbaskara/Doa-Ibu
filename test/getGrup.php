@@ -24,44 +24,53 @@
 		array_push($groupMan, 9);
 		array_push($groupMan, 15);
 		array_push($groupMan, 8);
-		array_push($groupMan, 1);
+		array_push($groupMan, 10);
 		array_push($groupMan, 2);
-		array_push($groupMan, 3);
+		array_push($groupMan, 12);
 		array_push($groupMan, 4);
 		array_push($groupMan, 5);
 		array_push($groupMan, 6);
 		array_push($groupMan, 7);
-		array_push($groupMan, 10);
+		array_push($groupMan, 1);
 		array_push($groupMan, 11);
-		array_push($groupMan, 12);
-		array_push($groupMan, 13);
+		array_push($groupMan, 3);
 		array_push($groupMan, 14);
 
 		$groupWoman = array();
 		array_push($groupWoman, 3);
 		array_push($groupWoman, 4);
 		array_push($groupWoman, 7);
-		array_push($groupWoman, 1);
-		array_push($groupWoman, 2);
 		array_push($groupWoman, 5);
+		array_push($groupWoman, 11);
 		array_push($groupWoman, 6);
+		array_push($groupWoman, 1);
 		array_push($groupWoman, 7);
 		array_push($groupWoman, 8);
 		array_push($groupWoman, 9);
 		array_push($groupWoman, 10);
-		array_push($groupWoman, 11);
+		array_push($groupWoman, 2);
 		array_push($groupWoman, 12);
-		array_push($groupWoman, 13);
 		array_push($groupWoman, 14);
 		array_push($groupWoman, 15);
+
+		$groupRandom = array()
 
 		if ($jenisKelamin == "L")
 		{
 			return $groupMan;
 		}
-		else
+		else if ($jenisKelamin == "P")
 		{
 			return $groupWoman;
+		}
+		else
+		{
+			$random = rand(1, 15);
+			if ($random == 13)
+				$random += 1;
+
+			array_push($groupRandom, $random);
+			return $groupRandom;
 		}
 	}
 
