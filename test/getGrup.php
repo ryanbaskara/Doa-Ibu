@@ -44,7 +44,6 @@
 		array_push($groupWoman, 11);
 		array_push($groupWoman, 6);
 		array_push($groupWoman, 1);
-		array_push($groupWoman, 7);
 		array_push($groupWoman, 8);
 		array_push($groupWoman, 9);
 		array_push($groupWoman, 10);
@@ -59,19 +58,17 @@
 		{
 			return $groupMan;
 		}
-		else
+		else if ($jenisKelamin == 'P')
 		{
 			return $groupWoman;
 		}
-		// else
-		// {
-		// 	$random = rand(1, 15);
-		// 	if ($random == 13)
-		// 		$random += 1;
-		//
-		// 	array_push($groupRandom, $random);
-		// 	return $groupRandom;
-		// }
+		else
+		{
+			$groupRandom = range(1, 15);
+    		array_splice($groupRandom, 12, 12);
+			shuffle($groupRandom);
+			return $groupRandom;
+		}
 	}
 
 	// function setCookieGroup ($cookieName, $cookieValue)
@@ -132,6 +129,17 @@
 		return $idTopStories;
 	}
 
+	function getIdFeed ($grup, $auth, $idBerita)
+	{
+		$id = getIdNewsGenderBased($grup, $auth);
+
+		$context = otentikasi($auth);
+		$url='https://hack.kurio.co.id/v1/feed/topic:' . $id;
+		$content=file_get_contents($url,false,$context);
+		$json= json_decode($content,true);
+		echo $json['data'][$idBerita]['id'];
+	}
+
 	function getTitleFeed ($grup, $auth, $idBerita)
 	{
 		$id = getIdNewsGenderBased($grup, $auth);
@@ -157,6 +165,10 @@
 		{
 			$gambar = $thumbnail['url'];
 			echo "<img src=\"" . $gambar . "\">";
+		}
+		else
+		{
+			echo "<img src=\"images/none.png\">";
 		}
 	}
 
