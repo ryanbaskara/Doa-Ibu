@@ -1,4 +1,4 @@
-<div id="main-content"><!-- background not working -->
+			<div id="main-content"><!-- background not working -->
 				<div class="col-md-9">
 					<div class="box">
 						<div class="box-header header-vimeo">
@@ -136,7 +136,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="box">
 						<div class="box-header header-natural">
 							<h2>Natural</h2>
@@ -156,6 +155,28 @@
 									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<img src="images/6.jpg" />
+									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
+								</div>
+								<div class="col-md-4">
+									<img src="images/7.jpg" />
+									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+								</div>
+								<div class="col-md-4">
+									<img src="images/7.jpg" />
+									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="box-header header-natural">
+							<h2>Auto</h2>
+						</div>
+						<div class="box-content">
 							<div class="row">
 								<div class="col-md-4">
 									<img src="images/6.jpg" />
