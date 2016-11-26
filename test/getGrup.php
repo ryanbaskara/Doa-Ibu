@@ -53,7 +53,7 @@
 		array_push($groupWoman, 14);
 		array_push($groupWoman, 15);
 
-		$groupRandom = array()
+		$groupRandom = array();
 
 		if ($jenisKelamin == "L")
 		{
