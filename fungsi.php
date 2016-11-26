@@ -48,8 +48,17 @@
 		
 		return $content;
 	}
-
-	$temp = login('ryan.baskara@gmail.com','ryan1234');
+	if (isset($_POST['login'])) {
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$temp = login($email,$password);
+		if ($json['code']=='42') {
+			echo $json['message'];
+		} else {
+			echo "login sukses";
+		}
+	}
+	/*$temp = login('ryan.baskara@gmail.com','ryan1234');
 	$json= json_decode($temp,true);
-	echo $json['id'];
+	echo $json['id'];*/
 ?>
