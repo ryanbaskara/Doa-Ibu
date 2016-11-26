@@ -140,7 +140,7 @@
 		 } 
 		$queue = array_reverse($queue);
 		array_push($queue, $id_story);
-		if ($jumlah_array>5) {
+		if ($jumlah_array>4) {
 			array_shift($queue);
 		}
 		$json = json_encode(array_reverse($queue));
