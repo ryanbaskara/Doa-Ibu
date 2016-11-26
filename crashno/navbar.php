@@ -34,9 +34,15 @@
             <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akun <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
+	          <?php if (@$_COOKIE['login']==1) {
+	          ?>
+	          <li><a href="logout.php">Logout</a></li>
+	          <?php
+	          } else {?>
 	            <li><a href="#loginModal" data-toggle='modal'>Login</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a href="#daftarModal" data-toggle='modal'">Daftar</a></li>
+	          <?php } ?>
 	          </ul>
 	        </li>
           </ul>
