@@ -53,7 +53,7 @@
 		</div>
 		<div class="box">
 			<div class="box-header header-natural">
-				<h2<?php echo $namaGrup[1]; ?></h2>
+				<h2><?php echo $namaGrup[1]; ?></h2>
 			</div>
 			<div class="box-content">
 				<div class="row">
