@@ -64,5 +64,7 @@
 		 						'image'=> $gambar,
 		 						'title'=>$judul));
 		 }
+	} else {
+		$data = NULL;
 	}
 ?>
