@@ -12,7 +12,7 @@
 		$jk="none";
 		$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
 	}
-	
+
 	$dataJK= ambilDataCoCe($jk);
 	$namaGrup = getGroup($dataJK, $auth);
 	
@@ -84,10 +84,9 @@
 	<div id="page-content" class="index-page container">
 		<div class="row">
 			<?php
-			$jenis_kelamin=$_COOKIE['jenis_kelamin'];
-			if($jenis_kelamin=='L')
+			if($jk=='L')
 				include 'content-atas-male.php';
-			else if($jenis_kelamin=='P')
+			else if($jk=='P')
 				include 'content-atas-female.php';
 			else
 				include 'content-atas-none.php';
@@ -122,9 +121,9 @@
 				</div>
 			</div>
 			<?php
-			if($jenis_kelamin=='L')
+			if($jk=='L')
 				include 'content-bawah-male.php';
-			else if($jenis_kelamin=='P')
+			else if($jk=='P')
 				include 'content-bawah-female.php';
 			else
 				include 'content-bawah-none.php';
