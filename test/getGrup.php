@@ -168,6 +168,10 @@
 			$gambar = $thumbnail['url'];
 			echo "<img src=\"" . $gambar . "\">";
 		}
+		else
+		{
+			echo "<img src=\"images/none.png\">";
+		}
 	}
 
 	// $jenis = "P";

@@ -13,10 +13,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-	<?php include 'navbar.php'; ?>	
+	<?php include 'navbar.php'; ?>
 
 	<div class="body featured container">
-		<div class="row">	
+		<div class="row">
 			<div class="col-sm-12">
 				<!-- Carousel -->
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -29,49 +29,31 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
-							<?php
-							getImageFeed($dataJK[0], $auth, 0);
-							?>
+							<?php getImageFeed($dataJK[0], $auth, 0); ?>
 							<!-- Static Header -->
 							<div class="header-text hidden-xs">
 								<div class="col-md-12 text-center">
-									<h2>
-									<?php
-										getTitleFeed($dataJK[0], $auth, 0);
-									?>
-									</h2>
+									<a href="<?php echo getIdFeed($dataJK[0], $auth, 0); ?>"><h2><?php getTitleFeed($dataJK[0], $auth, 0); ?></h2></a>
 									<br>
 								</div>
 							</div><!-- /header-text -->
 						</div>
 						<div class="item">
-							<?php
-							getImageFeed($dataJK[1], $auth, 0);
-							?>
+							<?php getImageFeed($dataJK[1], $auth, 0); ?>
 							<!-- Static Header -->
 							<div class="header-text hidden-xs">
 								<div class="col-md-12 text-center">
-									<h2>
-									<?php
-										getTitleFeed($dataJK[1], $auth, 0);
-									?>
-									</h2>
+									<a href="<?php echo getIdFeed($dataJK[1], $auth, 0); ?>"><h2> <?php getTitleFeed($dataJK[1], $auth, 0); ?> </h2></a>
 									<br>
 								</div>
 							</div><!-- /header-text -->
 						</div>
 						<div class="item">
-							<?php
-							getImageFeed($dataJK[2], $auth, 0);
-							?>
+							<?php getImageFeed($dataJK[2], $auth, 0); ?>
 							<!-- Static Header -->
 							<div class="header-text hidden-xs">
 								<div class="col-md-12 text-center">
-									<h2>
-									<?php
-										getTitleFeed($dataJK[2], $auth, 0);
-									?>
-									</h2>
+									<a href="<?php echo getIdFeed($dataJK[2], $auth, 0); ?>"><h2><?php getTitleFeed($dataJK[2], $auth, 0); ?></h2></a>
 									<br>
 								</div>
 							</div><!-- /header-text -->
@@ -88,13 +70,13 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- /////////////////////////////////////////Content -->
 	<div id="page-content" class="index-page container">
 		<div class="row">
 			<?php
 			$jenis_kelamin=$_COOKIE['jenis_kelamin'];
-			if($jenis_kelamin=='L') 
+			if($jenis_kelamin=='L')
 				include 'content-atas-male.php';
 			else if($jenis_kelamin=='P')
 				include 'content-atas-female.php';
@@ -117,10 +99,10 @@
 
 									<div class="top-name">
 										<hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[1]['id']; ?>"><?php echo $temp[1]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[2]['id']; ?>"><?php echo $temp[2]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[3]['id']; ?>"><?php echo $temp[3]['judul']; ?></a><hr class="style-line"> 
-										<a href="single.php?id=<?php echo $temp[4]['id']; ?>"><?php echo $temp[4]['judul']; ?></a><hr class="style-line"> 
+										<a href="single.php?id=<?php echo $temp[1]['id']; ?>"><?php echo $temp[1]['judul']; ?></a><hr class="style-line">
+										<a href="single.php?id=<?php echo $temp[2]['id']; ?>"><?php echo $temp[2]['judul']; ?></a><hr class="style-line">
+										<a href="single.php?id=<?php echo $temp[3]['id']; ?>"><?php echo $temp[3]['judul']; ?></a><hr class="style-line">
+										<a href="single.php?id=<?php echo $temp[4]['id']; ?>"><?php echo $temp[4]['judul']; ?></a><hr class="style-line">
 										<a href="single.php?id=<?php echo $temp[5]['id']; ?>"><?php echo $temp[5]['judul']; ?></a><hr class="style-line">
 									</div>
 
@@ -131,7 +113,7 @@
 				</div>
 			</div>
 			<?php
-			if($jenis_kelamin=='L') 
+			if($jenis_kelamin=='L')
 				include 'content-bawah-male.php';
 			else if($jenis_kelamin=='P')
 				include 'content-bawah-female.php';
@@ -147,7 +129,7 @@
 		</div>
 	</footer>
 	<!-- Footer -->
-	  
+
 	  <?php
 	  	include 'modal.php';
 	  ?>
@@ -165,12 +147,12 @@
 	  $("#owl-demo-2").owlCarousel({
         autoPlay: 3000,
         items : 3,
-        
+
       });
     });
     </script>
-	
-	
+
+
 	<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 	<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
 	<script type="text/javascript">
@@ -211,7 +193,7 @@
 		    $('#myModal').modal('show');
 		});
 	<?php } ?>
-	
+
 </script>
 
 </body>
