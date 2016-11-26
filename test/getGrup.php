@@ -24,7 +24,6 @@
 		array_push($groupMan, 9);
 		array_push($groupMan, 15);
 		array_push($groupMan, 8);
-		array_push($groupMan, 10);
 		array_push($groupMan, 1);
 		array_push($groupMan, 2);
 		array_push($groupMan, 3);
@@ -32,6 +31,7 @@
 		array_push($groupMan, 5);
 		array_push($groupMan, 6);
 		array_push($groupMan, 7);
+		array_push($groupMan, 10);
 		array_push($groupMan, 11);
 		array_push($groupMan, 12);
 		array_push($groupMan, 13);
