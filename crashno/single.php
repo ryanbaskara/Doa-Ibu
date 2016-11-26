@@ -38,7 +38,6 @@
 
 <body>
 <header>
-
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -52,42 +51,33 @@
         </div>
         <div class="navbar-collapse collapse">
         	<ul class="nav navbar-nav">
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Category <i class="fa fa-arrow-circle-o-down"></i></a>
-					<div class="dropdown-menu">
-						<div class="dropdown-inner">
-							<ul class="list-unstyled">
-								<li><a href="archive.html">News</a></li>
-								<li><a href="archive.html">Otomotif</a></li>
-								<li><a href="archive.html">Tekno</a></li>
-								<li><a href="archive.html">Bola</a></li>
-								<li><a href="archive.html">Travel</a></li>
-							</ul>
-							<ul class="list-unstyled">
-								<li><a href="archive.html">Celeb</a></li>
-								<li><a href="archive.html">Kesehatan</a></li>
-								<li><a href="archive.html">Bisnis</a></li>
-								<li><a href="archive.html">Style</a></li>
-								<li><a href="archive.html">Life</a></li>
-							</ul>
-							<ul class="list-unstyled">
-								<li><a href="archive.html">Unik</a></li>
-								<li><a href="archive.html">Trending</a></li>
-								<li><a href="archive.html#">Top Stories</a></li>
-								</ul>
-						</div>
-					</div>
-				</li>
+				<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
 			</ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.php">Login</a></li>
-            <li>
-            	
-            </li>
+            <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akun <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#loginModal" data-toggle='modal'>Login</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#daftarModal" data-toggle='modal'>Daftar</a></li>
+	          </ul>
+	        </li>
           </ul>
         </div>
       </div>
     </div>  
-</header>	
+</header>
 	
 	<!-- /////////////////////////////////////////Content -->
 	<div id="page-content" class="single-page container">
@@ -199,6 +189,10 @@
 			<p>Copyright 2015 - <a href="http://www.365bootstrap.com" target="_blank" rel="nofollow">Bootstrap Themes</a> Designed by 365Bootstrap.com</p>
 		</div>
 	</footer>
+
+	<?php
+		include 'modal.php';
+	?>
 	<!-- Footer -->
 	
 	<!-- JS -->

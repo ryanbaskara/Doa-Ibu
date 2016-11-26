@@ -151,23 +151,23 @@
 		}
 	}
 
-	$jenis = "P";
-	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
-	$dataJenisKelamin = ambilDataCoCe($jenis);
-	// getAllDataGroup($auth, $dataJenisKelamin);
-	$judulGrup = getGroup($dataJenisKelamin, $auth);
+	// $jenis = "P";
+	// $auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
+	// $dataJenisKelamin = ambilDataCoCe($jenis);
+	// // getAllDataGroup($auth, $dataJenisKelamin);
+	// $judulGrup = getGroup($dataJenisKelamin, $auth);
 
-	getTitleFeed($dataJenisKelamin[0], $auth, 2);
-	echo "<br>";
-	getImageFeed($dataJenisKelamin[0], $auth, 2);
-	echo "<br>";
+	// getTitleFeed($dataJenisKelamin[0], $auth, 2);
+	// echo "<br>";
+	// getImageFeed($dataJenisKelamin[0], $auth, 2);
+	// echo "<br>";
 
-	getTitleFeed($dataJenisKelamin[1], $auth, 2);
-	echo "<br>";
-	getImageFeed($dataJenisKelamin[1], $auth, 2);
-	echo "<br>";
+	// getTitleFeed($dataJenisKelamin[1], $auth, 2);
+	// echo "<br>";
+	// getImageFeed($dataJenisKelamin[1], $auth, 2);
+	// echo "<br>";
 
-	getTitleFeed($dataJenisKelamin[2], $auth, 2);
-	echo "<br>";
-	getImageFeed($dataJenisKelamin[2], $auth, 2);
+	// getTitleFeed($dataJenisKelamin[2], $auth, 2);
+	// echo "<br>";
+	// getImageFeed($dataJenisKelamin[2], $auth, 2);
 ?>

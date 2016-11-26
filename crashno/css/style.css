@@ -149,7 +149,7 @@ header{}
 .carousel-inner > .item > a > img {display: block;max-width: 100%;height: auto;margin-left:0;padding-left: 0;}
 
 /* Carousel Header Styles */
-.header-text {position: absolute;top: 33%;left: 1.8%;right: auto;width: 96.66666666666666%;color: #fff;}
+.header-text {position: absolute;top: 60%;left: 1.8%;right: auto;width: 96.66666666666666%;color: #fff;}
 .header-text h2 {font-size: 40px;padding: 10px;color: #fff;text-transform: uppercase;background-color: #DA251D;display:inline-block;color:#fff;}
 .header-text h3 {color: #fff;}
 
@@ -479,6 +479,7 @@ footer .footer-3 ul li a:hover{color: #666;}
 .navbar-header .navbar-brand:hover {
   color: #f7ca16;
 }
+
 .navbar-default .navbar-nav > li > a {
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -488,6 +489,17 @@ footer .footer-3 ul li a:hover{color: #666;}
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #f7ca16;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #c00;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
