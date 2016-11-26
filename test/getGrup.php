@@ -55,7 +55,7 @@
 
 		$groupRandom = array();
 
-		if ($jenisKelamin == "L")
+		if ($jenisKelamin == 'L')
 		{
 			return $groupMan;
 		}
