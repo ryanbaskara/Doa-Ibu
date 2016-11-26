@@ -237,31 +237,31 @@
 						</div>
 						<div class="box-content">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<img src="images/6.jpg" />
 									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
-									<span><i class="fa fa-heart"></i> 1,200 / <i class="fa fa-calendar"></i> 25/3/2015 / <i class="fa fa-comment-o"> / </i> 10 <i class="fa fa-eye"></i> 945</span>
-									<span class="rating">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-half"></i>
-									</span>
-									<p>Marshall, Will, and Holly on a routine expedition, met the greatest earthquake ever known. High on the rapids, it struck their tiny raft! And plunged them down a thousand feet below…...</p>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<img src="images/7.jpg" />
 									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
-									<span><i class="fa fa-heart"></i> 1,200 / <i class="fa fa-calendar"></i> 25/3/2015 / <i class="fa fa-comment-o"> / </i> 3 <i class="fa fa-eye"></i> 1007</span>
-									<span class="rating">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-half"></i>
-									</span>
-									<p>There once was a story about a man who could turn invisible. I thought it was only a story… until it happened to me. Ok, so here’s how it works: there’s this stuff called...</p>
+								</div>
+								<div class="col-md-4">
+									<img src="images/7.jpg" />
+									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<img src="images/6.jpg" />
+									<h3><a href="#">Marshall, Will, and Holly on a Routine Expedition</a></h3>
+								</div>
+								<div class="col-md-4">
+									<img src="images/7.jpg" />
+									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
+								</div>
+								<div class="col-md-4">
+									<img src="images/7.jpg" />
+									<h3><a href="#">Your Tread Must be Light and Sure as Though Your Path...</a></h3>
 								</div>
 							</div>
 						</div>

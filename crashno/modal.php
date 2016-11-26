@@ -15,7 +15,7 @@
 	          	</a>
 	          </div>
 	          <div class="col-md-6 text-center">
-	          	<a href="cek_awal.php?jk=L">
+	          	<a href="cek_awal.php?jk=P">
 	          	<img src="images/girl.png">
 	          	<h4> Perempuan </h4>
 	          	</a>

@@ -36,7 +36,8 @@
 </head>
 
 <header>
-	<?php 
+	<?php
+		$jk=$_COOKIE['jenis_kelamin']; 
 		if($jk=='L') echo "<div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>";
 			else if($jk=='P') echo 	"<div class='navbar navbar-default navbar-fixed-top' role='navigation'>";
 			else echo "<div class='navbar navbar-none navbar-fixed-top' role='navigation'>";
