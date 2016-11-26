@@ -36,7 +36,7 @@ function topStories(){
 	//echo topStories();
 	// $temp=topStoriesGambar();
 	// echo $temp[0];
-	$tempj = topStories();
-	echo $tempj[1]['gambar'];
+	//$tempj = topStories();
+	//echo $tempj[1]['gambar'];
 	//echo $temp[1];
 ?>
