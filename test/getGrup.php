@@ -112,7 +112,7 @@
 		return $groupTitle;
 	}
 
-	function getIdTopStoriesGenderBased ($grup, $auth)
+	function getIdNewsGenderBased ($grup, $auth)
 	{
 		$context = otentikasi($auth);
 		$url='https://hack.kurio.co.id/v1/explore/group/' . $grup;
@@ -123,25 +123,51 @@
 		return $idTopStories;
 	}
 
-	function getTitleTopStories ($grup, $auth)
+	function getTitleFeed ($grup, $auth, $idBerita)
 	{
-		$id = getIdTopStoriesGenderBased($grup, $auth);
+		$id = getIdNewsGenderBased($grup, $auth);
 
 		$context = otentikasi($auth);
-		$url='https://hack.kurio.co.id/v1/feed/topic:' . $id . ",top_stories";
+		$url='https://hack.kurio.co.id/v1/feed/topic:' . $id;
 		$content=file_get_contents($url,false,$context);
 		$json= json_decode($content,true);
-		echo $json['data'][0]['data'][0]['title'];
-		echo "<br>";
-		echo "<img src=\"" . $json['data'][0]['data'][0]['thumbnail']['url'] . "\">";
+		echo $json['data'][$idBerita]['title'];
 	}
 
-	$jenis = "L";
+	function getImageFeed ($grup, $auth, $idBerita)
+	{
+		$id = getIdNewsGenderBased($grup, $auth);
+
+		$context = otentikasi($auth);
+		$url='https://hack.kurio.co.id/v1/feed/topic:' . $id;
+		$content=file_get_contents($url,false,$context);
+		$json= json_decode($content,true);
+
+		$thumbnail = $json['data'][$idBerita]['thumbnail'];
+		if (count($thumbnail) > 0)
+		{
+			$gambar = $thumbnail['url'];
+			echo "<img src=\"" . $gambar . "\">";
+		}
+	}
+
+	$jenis = "P";
 	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
 	$dataJenisKelamin = ambilDataCoCe($jenis);
 	// getAllDataGroup($auth, $dataJenisKelamin);
 	$judulGrup = getGroup($dataJenisKelamin, $auth);
-	getTitleTopStories($dataJenisKelamin[0], $auth);
-	getTitleTopStories($dataJenisKelamin[1], $auth);
-	getTitleTopStories($dataJenisKelamin[2], $auth);
+
+	getTitleFeed($dataJenisKelamin[0], $auth, 2);
+	echo "<br>";
+	getImageFeed($dataJenisKelamin[0], $auth, 2);
+	echo "<br>";
+
+	getTitleFeed($dataJenisKelamin[1], $auth, 2);
+	echo "<br>";
+	getImageFeed($dataJenisKelamin[1], $auth, 2);
+	echo "<br>";
+
+	getTitleFeed($dataJenisKelamin[2], $auth, 2);
+	echo "<br>";
+	getImageFeed($dataJenisKelamin[2], $auth, 2);
 ?>
