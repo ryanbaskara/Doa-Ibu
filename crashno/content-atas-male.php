@@ -2,7 +2,7 @@
 				<div class="col-md-9">
 					<div class="box">
 						<div class="box-header header-vimeo">
-							<h2>Vimeo</h2>
+							<h2><?php echo $namaGrup[0]; ?></h2>
 						</div>
 						<div class="box-content">
 							<div class="row">
@@ -10,126 +10,66 @@
 									<div class="wrap-vid">
 										<div class="zoom-container">
 											<div class="zoom-caption">
-												<span class="vimeo">Vimeo</span>
 												<a href="single.html">
 													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
 												</a>
-												<p>Video's Name</p>
 											</div>
-											<img src="images/2.jpg" />
+											<?php echo getImageFeed($dataJK[0], $auth, 1); ?>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
+										<h3 class="vid-name"><a href="#"><?php echo getTitleFeed($dataJK[0], $auth, 1); ?></a></h3>
 									</div>
-									<p class="more">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</p>
 								</div>
 								<div class="col-md-6">
 									<div class="post wrap-vid">
 										<div class="zoom-container">
 											<div class="zoom-caption">
-												<span class="vimeo">Vimeo</span>
 												<a href="single.html">
 													<i class="fa fa-play-circle-o fa-3x" style="color: #fff"></i>
 												</a>
-												<p>Video's Name</p>
 											</div>
-											<img src="images/1.jpg" />
+											<?php echo getImageFeed($dataJK[0], $auth, 2); ?>
 										</div>
 										<div class="wrapper">
-											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
-											<div class="info">
-												<h6>By <a href="#">Kelvin</a></h6>
-												<span><i class="fa fa-heart"></i>1,200 / <i class="fa fa-calendar"></i>25/3/2015</span>
-												<span class="rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-half"></i>
-												</span>
-											</div>
+											<h5 class="vid-name"><a href="#"><?php echo getTitleFeed($dataJK[0], $auth, 2); ?></a></h5>
 										</div>
 									</div>
 									<div class="post wrap-vid">
 										<div class="zoom-container">
 											<div class="zoom-caption">
-												<span class="vimeo">Vimeo</span>
 												<a href="single.html">
 													<i class="fa fa-play-circle-o fa-3x" style="color: #fff"></i>
 												</a>
-												<p>Video's Name</p>
 											</div>
-											<img src="images/2.jpg" />
+											<?php echo getImageFeed($dataJK[0], $auth, 3); ?>
 										</div>
 										<div class="wrapper">
-											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
-											<div class="info">
-												<h6>By <a href="#">Kelvin</a></h6>
-												<span><i class="fa fa-heart"></i>1,200 / <i class="fa fa-calendar"></i>25/3/2015</span>
-												<span class="rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</span>
-											</div>
+											<h5 class="vid-name"><a href="#"><?php echo getTitleFeed($dataJK[0], $auth, 3); ?></a></h5>
 										</div>
 									</div>
 									<div class="post wrap-vid">
 										<div class="zoom-container">
 											<div class="zoom-caption">
-												<span class="vimeo">Vimeo</span>
 												<a href="single.html">
 													<i class="fa fa-play-circle-o fa-3x" style="color: #fff"></i>
 												</a>
-												<p>Video's Name</p>
 											</div>
-											<img src="images/3.jpg" />
+											<?php echo getImageFeed($dataJK[0], $auth, 4); ?>
 										</div>
 										<div class="wrapper">
-											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
-											<div class="info">
-												<h6>By <a href="#">Kelvin</a></h6>
-												<span><i class="fa fa-heart"></i>1,200 / <i class="fa fa-calendar"></i>25/3/2015</span>
-												<span class="rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-half"></i>
-												</span>
-											</div>
+											<h5 class="vid-name"><a href="#"><?php echo getTitleFeed($dataJK[0], $auth, 4); ?></a></h5>
 										</div>
 									</div>
 									<div class="post wrap-vid">
 										<div class="zoom-container">
 											<div class="zoom-caption">
-												<span class="vimeo">Vimeo</span>
 												<a href="single.html">
 													<i class="fa fa-play-circle-o fa-3x" style="color: #fff"></i>
 												</a>
-												<p>Video's Name</p>
 											</div>
-											<img src="images/1.jpg" />
+											<?php echo getImageFeed($dataJK[0], $auth, 5); ?>
 										</div>
 										<div class="wrapper">
-											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
-											<div class="info">
-												<h6>By <a href="#">Kelvin</a></h6>
-												<span><i class="fa fa-heart"></i>1,200 / <i class="fa fa-calendar"></i>25/3/2015</span>
-												<span class="rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-half"></i>
-												</span>
-											</div>
+											<h5 class="vid-name"><a href="#"><?php echo getTitleFeed($dataJK[0], $auth, 5); ?></a></h5>
 										</div>
 									</div>
 								</div>
