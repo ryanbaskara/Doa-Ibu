@@ -57,6 +57,7 @@
 		
 		setCookieFunc("jenis_kelamin",$jeniskelamin);
 		setCookieFunc("access_token",$json['token']['access_token']);
+		setCookieFunc("name","guest");
 		echo $json['token']['access_token'];
 
 	}
@@ -97,6 +98,7 @@
 		setCookieFunc("jenis_kelamin",$jenis_kelamin);
 		setCookieFunc("access_token",$json['token']['access_token']);
 		setCookieFunc("login",1);
+		setCookieFunc("name",$json['name']);
 		header('location:index.php');
 		
 	}
@@ -117,6 +119,7 @@
 			}
 			setCookieFunc("jenis_kelamin",$jeniskelamin);
 			setCookieFunc("access_token",$json['token']['access_token']);
+			setCookieFunc("name",$json['name']);
 			setCookieFunc("login",1);
 		} else {
 			echo $json['message'];

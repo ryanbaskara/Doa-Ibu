@@ -1,5 +1,6 @@
 <?php
 function topStories(){
+	$auth = $_COOKIE['access_token'];
 		$url='https://hack.kurio.co.id/v1/feed/top_stories';
 		$opts = array(
 				'http'=>array(
@@ -9,7 +10,7 @@ function topStories(){
 								"X-Kurio-Client-Secret:S3VyaW9IYWNrYXRvbjIw\r\n" .
 								"X-OS:windows\r\n" .
 								"X-App-Version:1.0\r\n" .
-								"Authorization:Bearer YKtzmrkSKD6rvesV9e7PfPuKSNlFCIWg9Acq5G2Z\r\n"
+								"Authorization:Bearer ".$auth."\r\n"
 					)
 			);
 		$context=stream_context_create($opts);

@@ -1,17 +1,21 @@
 <?php
 	include '../test/getGrup.php';
 	include 'topStories.php';
+	include 'fungsi.php';
 	$temp = topStories();
 	
+	if (!isset($_COOKIE['access_token'])) {
+		guest("none");
+	}
 	
 	if(isset($_COOKIE['jenis_kelamin'])){
 		$jk=$_COOKIE['jenis_kelamin'];
 		$auth=$_COOKIE['access_token'];
 	}
-	else {
-		$jk="none";
-		$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
-	}
+	// else {
+	// 	$jk="none";
+	// 	$auth = "EPOw1awLNdrVPcflSlKhRiWk1KStBaJUOS4ftxLL";
+	// }
 
 	$dataJK= ambilDataCoCe($jk);
 	$namaGrup = getGroup($dataJK, $auth);

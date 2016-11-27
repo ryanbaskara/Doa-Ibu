@@ -31,7 +31,7 @@
 	$id=$_GET['id'];
 	function detail($id){
 		$url='https://hack.kurio.co.id/v1/article/'.$id;
-
+		$auth = $_COOKIE['access_token'];
 		$opts = array(
 					'http'=>array(
 							'method'=>'GET',
@@ -40,7 +40,7 @@
 									"X-Kurio-Client-Secret:S3VyaW9IYWNrYXRvbjIw\r\n" .
 									"X-OS:windows\r\n" .
 									"X-App-Version:1.0\r\n" .
-									"Authorization:Bearer YKtzmrkSKD6rvesV9e7PfPuKSNlFCIWg9Acq5G2Z\r\n"
+									"Authorization:Bearer ".$auth."\r\n"
 						)
 				);
 		$context=stream_context_create($opts);
