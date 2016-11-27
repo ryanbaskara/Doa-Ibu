@@ -10,14 +10,14 @@
 									<div class="row">
 										<div class="col-md-12">
 											<?php echo getImageFeed($dataJK[3], $auth, 0); ?>
-											<h3><a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 0); ?></a></h3>
+											<h3><a href="single.php?id=<?php echo getIdFeed($dataJK[3], $auth, 0); ?>"><?php echo getTitleFeed($dataJK[3], $auth, 0); ?></a></h3>
 											<div class="top-name">
 												<hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 1); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 2); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 3); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 4); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[3], $auth, 5); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[3], $auth, 1); ?>"><?php echo getTitleFeed($dataJK[3], $auth, 1); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[3], $auth, 2); ?>"><?php echo getTitleFeed($dataJK[3], $auth, 2); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[3], $auth, 3); ?>"><?php echo getTitleFeed($dataJK[3], $auth, 3); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[3], $auth, 4); ?>"><?php echo getTitleFeed($dataJK[3], $auth, 4); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[3], $auth, 5); ?>"><?php echo getTitleFeed($dataJK[3], $auth, 5); ?></a><hr class="style-line">
 											</div>
 										</div>
 									</div>
@@ -33,14 +33,14 @@
 									<div class="row">
 										<div class="col-md-12">
 											<?php echo getImageFeed($dataJK[4], $auth, 0); ?>
-											<h3><a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 0); ?></a></h3>
+											<h3><a href="single.php?id=<?php echo getIdFeed($dataJK[4], $auth, 0); ?>"><?php echo getTitleFeed($dataJK[4], $auth, 0); ?></a></h3>
 											<div class="top-name">
 												<hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 1); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 2); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 3); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 4); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[4], $auth, 5); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[4], $auth, 1); ?>"><?php echo getTitleFeed($dataJK[4], $auth, 1); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[4], $auth, 2); ?>"><?php echo getTitleFeed($dataJK[4], $auth, 2); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[4], $auth, 3); ?>"><?php echo getTitleFeed($dataJK[4], $auth, 3); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[4], $auth, 4); ?>"><?php echo getTitleFeed($dataJK[4], $auth, 4); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[4], $auth, 5); ?>"><?php echo getTitleFeed($dataJK[4], $auth, 5); ?></a><hr class="style-line">
 											</div>
 										</div>
 									</div>
@@ -56,14 +56,14 @@
 									<div class="row">
 										<div class="col-md-12">
 											<?php echo getImageFeed($dataJK[5], $auth, 0); ?>
-											<h3><a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 0); ?></a></h3>
+											<h3><a href="single.php?id=<?php echo getIdFeed($dataJK[5], $auth, 0); ?>"><?php echo getTitleFeed($dataJK[5], $auth, 0); ?></a></h3>
 											<div class="top-name">
 												<hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 1); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 2); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 3); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 4); ?></a><hr class="style-line">
-												<a href="#"><?php echo getTitleFeed($dataJK[5], $auth, 5); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[5], $auth, 1); ?>"><?php echo getTitleFeed($dataJK[5], $auth, 1); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[5], $auth, 2); ?>"><?php echo getTitleFeed($dataJK[5], $auth, 2); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[5], $auth, 3); ?>"><?php echo getTitleFeed($dataJK[5], $auth, 3); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[5], $auth, 4); ?>"><?php echo getTitleFeed($dataJK[5], $auth, 4); ?></a><hr class="style-line">
+												<a href="single.php?id=<?php echo getIdFeed($dataJK[5], $auth, 5); ?>"><?php echo getTitleFeed($dataJK[5], $auth, 5); ?></a><hr class="style-line">
 											</div>
 										</div>
 									</div>

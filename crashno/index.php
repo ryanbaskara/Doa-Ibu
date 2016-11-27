@@ -106,12 +106,12 @@
 									</h5>
 
 									<div class="top-name">
-										<hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[1]['id']; ?>"><?php echo $temp[1]['judul']; ?></a><hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[2]['id']; ?>"><?php echo $temp[2]['judul']; ?></a><hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[3]['id']; ?>"><?php echo $temp[3]['judul']; ?></a><hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[4]['id']; ?>"><?php echo $temp[4]['judul']; ?></a><hr class="style-line">
-										<a href="single.php?id=<?php echo $temp[5]['id']; ?>"><?php echo $temp[5]['judul']; ?></a><hr class="style-line">
+										<hr class="style-line"> <br>
+										<a href="single.php?id=<?php echo $temp[1]['id']; ?>"><?php echo $temp[1]['judul']; ?></a><hr class="style-line"><br> 
+										<a href="single.php?id=<?php echo $temp[2]['id']; ?>"><?php echo $temp[2]['judul']; ?></a><hr class="style-line"><br>
+										<a href="single.php?id=<?php echo $temp[3]['id']; ?>"><?php echo $temp[3]['judul']; ?></a><hr class="style-line"><br>
+										<a href="single.php?id=<?php echo $temp[4]['id']; ?>"><?php echo $temp[4]['judul']; ?></a><hr class="style-line"><br>
+										<a href="single.php?id=<?php echo $temp[5]['id']; ?>"><?php echo $temp[5]['judul']; ?></a><hr class="style-line"><br>
 									</div>
 
 								</div>
@@ -201,7 +201,15 @@
 		    $('#myModal').modal('show');
 		});
 	<?php } ?>
-
+	$(document).ready(function(){
+		if($('#loginModal').is(":visible")){
+			console.log("modal open");
+		}
+		if($("#myModal").data('modal') && $("#myModal").data('modal').isShown ) {
+    console.log("Modal is open");
+}
+                                                                                                               
+	});
 </script>
 
 </body>
